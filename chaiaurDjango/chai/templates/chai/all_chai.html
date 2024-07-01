@@ -8,8 +8,8 @@
     <div class = 'bg-green-500 p-5 rounded'>
         <img class = "rounded shadow-lg" src="{{chai.image.url}}" alt="">
         <h3 class = "text-3xl text-white font-bold">{{chai.name}}</h3>
-        <a href="#">
-            <button type = "button" class="btn-cta" style="display: flex; align-items: center; justify-content: center;"  >  
+        <a href = "{% url 'chai_detail' chai.id %}">
+            <button type = "button" class="btn-cta" style="display: flex; align-items: center; justify-content: center;">  
                 {{chai.type}} - {{chai.id}}
 
             </button>
